@@ -85,27 +85,7 @@ public class GillianBray {
 		}
 		//Convert to list of strings
 		List<String> snippets = copyStringToListOfWords(sb.toString());
-		//Sort list using own comparator
-		//		snippets.sort(new Comparator<String> () {
-		//
-		//			@Override
-		//			public int compare(String o1, String o2) {
-		//				int r1 = overlap(o1, o2);
-		//				int r2 = overlap(o2, o1);
-		//				return r2 - r1;
-		//			}
-		//
-		//		});
-		//		//Remove common characters
-		//		String first = "";
-		//		String second = "";
-		//		sb = new StringBuffer();
-		//		for(String snippet: snippets) {
-		//			second = snippet;
-		//			int over = overlap(first,second);
-		//			sb.append(second.substring(over));
-		//			first = second.substring(over);
-		//		}
+	
 
 		System.out.println(reduce((ArrayList<String>) snippets));
 	}
